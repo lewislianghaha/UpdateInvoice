@@ -1,0 +1,15 @@
+D:\Project\K3_晶创税帐更新功能新建_20180611\UpdateInvoice\UpdateInvoice\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\K3_晶创税帐更新功能新建_20180611\UpdateInvoice\UpdateInvoice\obj\Debug\UpdateInvoice.FrmMain.resources
+D:\Project\K3_晶创税帐更新功能新建_20180611\UpdateInvoice\UpdateInvoice\obj\Debug\UpdateInvoice.Properties.Resources.resources
+D:\Project\K3_晶创税帐更新功能新建_20180611\UpdateInvoice\UpdateInvoice\obj\Debug\UpdateInvoice.csproj.GenerateResource.Cache
+D:\Project\K3_晶创税帐更新功能新建_20180611\UpdateInvoice\UpdateInvoice\bin\Debug\UpdateInvoice.exe
+D:\Project\K3_晶创税帐更新功能新建_20180611\UpdateInvoice\UpdateInvoice\bin\Debug\UpdateInvoice.pdb
+D:\Project\K3_晶创税帐更新功能新建_20180611\UpdateInvoice\UpdateInvoice\obj\Debug\UpdateInvoice.exe
+D:\Project\K3_晶创税帐更新功能新建_20180611\UpdateInvoice\UpdateInvoice\obj\Debug\UpdateInvoice.pdb
+D:\Project\K3_晶创税帐更新功能新建_20180611\UpdateInvoice\UpdateInvoice\bin\Debug\UpdateInvoice.exe.config
+D:\Project\K3_晶创税帐更新功能新建_20180611\UpdateInvoice\UpdateInvoice\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Project\K3_晶创税帐更新功能新建_20180611\UpdateInvoice\UpdateInvoice\bin\Debug\NPOI.dll
+D:\Project\K3_晶创税帐更新功能新建_20180611\UpdateInvoice\UpdateInvoice\bin\Debug\NPOI.OOXML.dll
+D:\Project\K3_晶创税帐更新功能新建_20180611\UpdateInvoice\UpdateInvoice\bin\Debug\NPOI.OpenXml4Net.dll
+D:\Project\K3_晶创税帐更新功能新建_20180611\UpdateInvoice\UpdateInvoice\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\Project\K3_晶创税帐更新功能新建_20180611\UpdateInvoice\UpdateInvoice\obj\Debug\UpdateInvoice.FrmErrorResult.resources
