@@ -1,0 +1,33 @@
+对晶创税帐数据库进行更新功能项目需求
+需要清楚以下要点:
+1)对更新的晶创数据库是不是对所有数据库进行更新
+A:不是,只要需要对AIS20170830215110 晶创税帐这个数据库进行更新就可以了
+
+2)原更新语句是不是只有使用更新语句。下面的存储过程有什么作用?(这些存储过程是不是在使用EXCEL导入时才需要使用)
+A:不需要.这些存储过程只是在EXCEL导入SQL SEVER数据库时才使用到
+
+3)除了对销售发票(IcSaleEntry)进行更新外,还需要对采购发票进行更新
+
+
+
+=>与数据库连接语句介绍
+与SQL数据库连接的语句如下:(包括Excel读取)
+<connectionStrings>
+		<add name="ConnectionString" connectionString="Data Source=(local);Initial Catalog=RTIM_YATU;Persist Security Info=True;User ID=sa;Password=Yatu8888;Pooling=true;Max Pool Size=40000;Min Pool Size=0" 
+		providerName="System.Data.SqlClient" />
+    <!--Excel读取 zhangping 2016/10/31-->
+    <add name="OleDbConStr" connectionString="provider=Microsoft.Jet.OLEDB.4.0;data source={0};Extended Properties=Excel 8.0;Persist Security Info=False" providerName="System.Data.OleDb"/>
+</connectionStrings>
+
+
+Net连接Oracle语句:
+<add name="ConnectOrc"
+       providerName="using Oracle.DataAccess.Client"
+       connectionString="Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.1.11)(PORT=1521))(CONNECT_DATA=(SID=e1db)));User Id=SXERP;Password=JFSerp123;"/>
+
+需求分析:
+功能名:税帐更新(UpdateInvoice)
+主要功能描述:
+1)将EXCEL导入并显示在DataGridView控件内
+2)通过"开始导入"功能将记录按照更新SQL语句更新到对应的数据库表内
+

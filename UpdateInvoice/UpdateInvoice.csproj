@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{91597775-7E68-4CD1-8D37-534992D11843}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UpdateInvoice</RootNamespace>
+    <AssemblyName>UpdateInvoice</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL" />
+    <Reference Include="NPOI, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL" />
+    <Reference Include="NPOI.OOXML, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL" />
+    <Reference Include="NPOI.OpenXml4Net, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL" />
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBCon\DbConnect.cs" />
+    <Compile Include="frmErrorResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmErrorResult.Designer.cs">
+      <DependentUpon>frmErrorResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Excel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmErrorResult.resx">
+      <DependentUpon>frmErrorResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\UpdateInvoice.FrmMain.resources" />
+    <EmbeddedResource Include="obj\Debug\UpdateInvoice.Properties.Resources.resources" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Files\20180630 购货发票%28专用%29晶创导入数据.xls" />
+    <None Include="Files\Excel模板\Invoice.xlsx" />
+    <None Include="Files\Excel模板\Invoice_20180703.xlsx" />
+    <None Include="Files\Excel模板\PurchaseInvoice.xlsx" />
+    <None Include="Files\Excel模板\SaleInvoice_bak.xlsx" />
+    <None Include="Files\Finish_Files\2018-06-14\UpdateInvoice.exe.config" />
+    <None Include="Files\Finish_Files\2018-06-14\UpdateInvoice.vshost.exe.config" />
+    <None Include="Files\Finish_Files\2018-06-14\UpdateInvoice.vshost.exe.manifest" />
+    <None Include="Files\Finish_Files\2018-06-14\模板及操作手册\Invoice.xlsx" />
+    <None Include="Files\Finish_Files\2018-06-14\模板及操作手册\操作手册.docx" />
+    <None Include="Files\Finish_Files\2018-07-03\UpdateInvoice.exe.config" />
+    <None Include="Files\Finish_Files\2018-07-03\UpdateInvoice.vshost.exe.config" />
+    <None Include="Files\Finish_Files\2018-07-03\UpdateInvoice.vshost.exe.manifest" />
+    <None Include="Files\Finish_Files\2018-07-03\模板及操作手册\Invoice.xlsx" />
+    <None Include="Files\Finish_Files\2018-07-03\模板及操作手册\操作手册.docx" />
+    <None Include="Files\Finish_Files\2018-07-04\UpdateInvoice.exe.config" />
+    <None Include="Files\Finish_Files\2018-07-04\UpdateInvoice.vshost.exe.config" />
+    <None Include="Files\Finish_Files\2018-07-04\UpdateInvoice.vshost.exe.manifest" />
+    <None Include="Files\操作手册.docx" />
+    <None Include="obj\Debug\UpdateInvoice.csproj.GenerateResource.Cache" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\UpdateInvoice.exe" />
+    <Content Include="bin\Debug\UpdateInvoice.pdb" />
+    <Content Include="bin\Debug\UpdateInvoice.vshost.exe" />
+    <Content Include="DLL\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="DLL\NPOI.dll" />
+    <Content Include="DLL\NPOI.OOXML.dll" />
+    <Content Include="DLL\NPOI.OpenXml4Net.dll" />
+    <Content Include="DLL\NPOI.OpenXmlFormats.dll" />
+    <Content Include="Files\20180608165837.png" />
+    <Content Include="Files\Finish_Files\2018-06-14\UpdateInvoice.exe" />
+    <Content Include="Files\Finish_Files\2018-06-14\UpdateInvoice.pdb" />
+    <Content Include="Files\Finish_Files\2018-06-14\UpdateInvoice.vshost.exe" />
+    <Content Include="Files\Finish_Files\2018-07-03\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="Files\Finish_Files\2018-07-03\NPOI.dll" />
+    <Content Include="Files\Finish_Files\2018-07-03\NPOI.OOXML.dll" />
+    <Content Include="Files\Finish_Files\2018-07-03\NPOI.OpenXml4Net.dll" />
+    <Content Include="Files\Finish_Files\2018-07-03\NPOI.OpenXmlFormats.dll" />
+    <Content Include="Files\Finish_Files\2018-07-03\UpdateInvoice.exe" />
+    <Content Include="Files\Finish_Files\2018-07-03\UpdateInvoice.pdb" />
+    <Content Include="Files\Finish_Files\2018-07-03\UpdateInvoice.vshost.exe" />
+    <Content Include="Files\Finish_Files\2018-07-04\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="Files\Finish_Files\2018-07-04\NPOI.dll" />
+    <Content Include="Files\Finish_Files\2018-07-04\NPOI.OOXML.dll" />
+    <Content Include="Files\Finish_Files\2018-07-04\NPOI.OpenXml4Net.dll" />
+    <Content Include="Files\Finish_Files\2018-07-04\NPOI.OpenXmlFormats.dll" />
+    <Content Include="Files\Finish_Files\2018-07-04\UpdateInvoice.exe" />
+    <Content Include="Files\Finish_Files\2018-07-04\UpdateInvoice.pdb" />
+    <Content Include="Files\Finish_Files\2018-07-04\UpdateInvoice.vshost.exe" />
+    <Content Include="Files\SQL\SQL更新语句格式1.sql" />
+    <Content Include="Files\SQL\SQL更新语句格式2.sql" />
+    <Content Include="Files\对晶创税帐数据库进行更新功能项目需求.txt" />
+    <Content Include="Files\问题整理\ADO当执行相关的数据库操作时,必须要有对应的Command设置%28如更新就需要UpdateCommand,插入就需要InsertCommand%29.png" />
+    <Content Include="Files\问题整理\在更新过程中若没有更新内容就会报这个错误.png" />
+    <Content Include="obj\Debug\UpdateInvoice.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\UpdateInvoice.exe" />
+    <Content Include="obj\Debug\UpdateInvoice.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\Refactor\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
